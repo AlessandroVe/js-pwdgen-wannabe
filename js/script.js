@@ -12,4 +12,10 @@ document.getElementById("favorite-color").innerHTML="Il tuo colore preferito e':
 var forUs= username+surname+color;
 document.getElementById("for-us").innerHTML="Per noi sarai sempre: " + forUs +21;
 
-
+/* capo scontanto */
+var cost=prompt("Quanto costa ma tua maglietta preferita'?");
+cost=parseInt(cost);
+var percentage=prompt("A quanto la vorresti scontata in percentuale ?");
+percentage=parseInt(percentage);
+var sale=(cost / 100)*percentage;
+document.getElementById("capo").innerHTML="La tua maglietta costera':"+(cost - sale + "$");
